@@ -1,0 +1,49 @@
+<DOCTYPE! html>
+    <html>
+        <head>
+            <title>Aesthetic Canvas</title>
+            <style>
+               canvas {
+                   padding: 0%;
+                   margin: 0%;
+                   background-color: antiquewhite;
+                   display: block;
+                   margin: 0 auto;
+                   border: 1px solid #0c0909;;
+               }  
+            </style>
+        </head>
+            <body>
+                <canvas id="lienzo"  style="width:500px; height: 500px;">
+
+                </canvas>
+                <script language="javascript">
+                    var l = document.getElementById("lienzo");
+                    var dimension = l.getContext("2d");
+                    dimension.beginPath();
+                    dimension.lineWidth = "10";
+                    dimension.strokeStyle = "hotpink";
+                    dimension.moveTo(0,30);
+                    dimension.lineTo(250, 34);
+                    dimension.stroke();
+
+                    dimension.beginPath();
+                    dimension.lineWidth = "20";
+                    dimension.strokeStyle = "Royalblue";
+                    dimension.moveTo(40, 60);
+                    dimension.lineTo(30, 60);
+                    dimension.stroke();
+
+                    dimension.fillRect(9, 40, 20, 70);
+                    dimension.fillStyle = "rgb(128, 0, 128)";
+
+                    // vamos a escribir algo XD
+
+                    dimension.font = "14px arial";
+                    dimension.fillText("Desafio DEVoff Arg!", 50, 40);
+                    dimension.fillText("saludes desde SV pal mundo XD", 30, 20);
+
+                    
+                </script>    
+            </body>        
+    </html>
